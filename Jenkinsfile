@@ -24,4 +24,11 @@ git branch: 'development', credentialsId: '586f68f7-14ac-4139-b5e9-70c7c3e7ba4f'
       sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@13.235.69.78:/opt/apache-tomcat-9.0.29/webapps/"
     } 
   }
+  stage('SendAEmailNotification')
+  {
+    emailext body: '''Deployed into Apache Tomcat Server
+
+Thanks & Regards
+Sujith Vellampalli''', subject: 'Build is Over', to: 'vellampalli18@gmail.com'
+  }
 }
