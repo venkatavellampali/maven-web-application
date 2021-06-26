@@ -105,6 +105,8 @@
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
 	      <url>http://35.154.65.181:8081/repository/maven-snapshots/</url>
+	      <nexus.user>admin</nexus.user>
+	      <nexus.password>f03471d5-43fa-485f-a3cb-2ac98ab37d91</nexus.password>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
